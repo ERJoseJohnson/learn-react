@@ -19,7 +19,8 @@ function ComplexItem(){
             </div>
             <div className="complex-item__description">
                 {/* It's also possible to just hard code values to a HTML element */ }
-                <h2>Car Insurance</h2>
+                {/* <h2>Car Insurance</h2> */}
+                <p className="complex-item">Car Insurance</p>
                 <div className="complex-item__price">${price}</div>
             </div>
         </div>
