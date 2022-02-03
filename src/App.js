@@ -5,6 +5,7 @@ import './App.css';
 import Item from './components/Item'
 import ComplexItem from './components/ComplexItem';
 import Greeting from './components/Greeting';
+import ComplexItemList from './components/ComplexItemList';
 /*
  This is the main function that kicks all of your React code off. 
  It is the top of the component render tree. All other components will appear below this App component.
@@ -19,8 +20,8 @@ function App() {
 
         {/* Use the imported custom component as such */}
         <Item></Item>
-        <ComplexItem></ComplexItem>
-
+        {/* <ComplexItem></ComplexItem> */}
+        <ComplexItemList></ComplexItemList>
         {/* Pass key-value pairs to the props of the component as below */}
         <Greeting logIn={logIn}></Greeting>
 
