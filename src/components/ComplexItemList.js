@@ -1,5 +1,6 @@
 import './ComplexItem.css';
 import ComplexItem from './ComplexItem';
+import Card from './Card';
 
 /*
     You can also use loops to create multiple components instead of hardcoding them one by one.
@@ -52,7 +53,7 @@ function ComplexItemList(props) {
       ];
 
     return (
-        <div className='complex-item-list'>
+        <Card className='complex-item-list'>
             {
                 // The map function maps a function to each item in the array.
                 // For each of the item, we return a componpent
@@ -66,7 +67,7 @@ function ComplexItemList(props) {
             
             {/* This is where the resultant array of the for loop is returned */}
             {components}
-        </div>
+        </Card>
         
     );
 }

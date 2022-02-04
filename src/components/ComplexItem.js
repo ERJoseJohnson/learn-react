@@ -1,4 +1,5 @@
 // You can use a CSS file to do additional styling on the HTML components
+import Card from './Card';
 import './ComplexItem.css';
 
 function ComplexItem(){
@@ -10,7 +11,7 @@ function ComplexItem(){
     This is because you can only return a single root element for React to render */}
     return (
         
-        <div className="complex-item">
+        <Card className="complex-item">
             {/* NOTE: You have to use class-name instead of the usual class keyword for JSX syntax */}
             <div>
                 { /* You can use normal JS inside these curly braces. You can use this to assign dynamic data to the HTML elements */
@@ -23,7 +24,7 @@ function ComplexItem(){
                 <p className="complex-item">Car Insurance</p>
                 <div className="complex-item__price">${price}</div>
             </div>
-        </div>
+        </Card>
     );
 }
 

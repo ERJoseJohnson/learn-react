@@ -22,7 +22,8 @@ function App() {
         {/* Use the imported custom component as such */}
         <Item></Item>
         {/* <ComplexItem></ComplexItem> */}
-        <ComplexItemList className='complex-item-list'></ComplexItemList>
+        <ComplexItemList ></ComplexItemList>
+        
         {/* Pass key-value pairs to the props of the component as below */}
         <Greeting logIn={logIn}></Greeting>
 
