@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/ComplexItemList.css';
 
 // Remember to import your custom component as an object
 import Item from './components/Item'
@@ -21,7 +22,7 @@ function App() {
         {/* Use the imported custom component as such */}
         <Item></Item>
         {/* <ComplexItem></ComplexItem> */}
-        <ComplexItemList></ComplexItemList>
+        <ComplexItemList className='complex-item-list'></ComplexItemList>
         {/* Pass key-value pairs to the props of the component as below */}
         <Greeting logIn={logIn}></Greeting>
 

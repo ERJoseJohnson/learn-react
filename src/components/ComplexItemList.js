@@ -52,7 +52,7 @@ function ComplexItemList(props) {
       ];
 
     return (
-        <div>
+        <div className='complex-item-list'>
             {
                 // The map function maps a function to each item in the array.
                 // For each of the item, we return a componpent
@@ -65,7 +65,7 @@ function ComplexItemList(props) {
 
             
             {/* This is where the resultant array of the for loop is returned */}
-            <div>{components}</div>
+            {components}
         </div>
         
     );
