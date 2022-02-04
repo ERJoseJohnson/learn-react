@@ -2,27 +2,24 @@
 import Card from './Card';
 import './ComplexItem.css';
 
-function ComplexItem(){
-    const date = new Date(2022, 0, 29);    // Use dynamic assignment to assign value to a HTML element
-    const title = "Car Insurance";
-    const price = 294.67
+function ComplexItem(props){
 
-    {/* To return multiple HTML elements, you have to encase them in a single element. 
-    This is because you can only return a single root element for React to render */}
+    // To return multiple HTML elements, you have to encase them in a single element. 
+    // This is because you can only return a single root element for React to render
     return (
         
         <Card className="complex-item">
             {/* NOTE: You have to use class-name instead of the usual class keyword for JSX syntax */}
             <div>
                 { /* You can use normal JS inside these curly braces. You can use this to assign dynamic data to the HTML elements */
-                    date.toISOString()
+                    props.date.toISOString().substring(0, 10)
                 }
             </div>
             <div className="complex-item__description">
                 {/* It's also possible to just hard code values to a HTML element */ }
                 {/* <h2>Car Insurance</h2> */}
-                <p className="complex-item">Car Insurance</p>
-                <div className="complex-item__price">${price}</div>
+                <p className="complex-item">{props.title}</p>
+                <div className="complex-item__price">${props.price}</div>
             </div>
         </Card>
     );
